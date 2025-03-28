@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 10px;
+      background-color: dodgerblue;
+      padding: 10px;
+    }
+    .grid-container > div {
+      background-color: #f1f1f1;
+      color: #000;
+      padding: 10px;
+      font-size: 30px;
+      text-align: center;
+    }
+    body {
+      background-color:white;
+    }
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #38444d;
+    }
+    
+    li {
+      float: left;
+    }
+    
+    li a, .dropbtn {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    li a:hover, .dropdown:hover .dropbtn {
+      background-color: red;
+    }
+    
+    li.dropdown {
+      display: inline-block;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .dropdown-content a:hover {background-color: #f1f1f1;}
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="stakeholders.html">Stakeholders</a></li>
+      <li><a href="software-tools.html">Software Tools</a></li>
+    </ul>
+  </nav>
+
+  <!-- Services Section -->
+  <section class="services">
+    <h1>Our Services</h1>
+    <p>At IWB, we offer a range of services for recycling electronic components such as:</p>
+    <div class="grid-container">
+      <div>Website maintenance & support</div>
+      <div>E-commerce solutions</div>
+      <div>Website Development & design</div>  
+      <div>Web Application development</div>
+      <div>Branding & Graphic design</div>
+      <div>Content management & copywriting</div>  
+      <div>Cloud-Based solutions</div>
+      <div>SEO & Digital Marketing</div>
+    </div>
+    <p>We ensure that each component is carefully dismantled and recycled in an eco-friendly manner.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 IWB. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
